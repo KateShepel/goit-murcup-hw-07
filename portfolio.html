@@ -29,31 +29,29 @@
 
     <!--Шапка сайта-->
     <header>
-      <div class="container main-nav">
-        <nav>
-          <a href="./" class="logo"> <span>Web</span>Studio </a>
+      <div class="container top">
+        <nav class="nav">
+          <a href="./" class="logo"> <span class="logo__part">Web</span>Studio </a>
 
-          <ul class="site-nav">
-            <li class="item"><a href="./index.html">Студия</a></li>
-            <li class="item">
-              <a href="./portfolio.html" class="current">Портфолио</a>
-            </li>
-            <li class="item"><a href="">Контакты</a></li>
+          <ul class="nav__list">
+            <li class="nav__item"><a href="" class="nav__link nav__link">Студия</a></li>
+            <li class="nav__item"><a href="./portfolio.html" class="nav__link--current">Портфолио</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
           </ul>
         </nav>
 
         <ul class="contacts">
-          <li class="item" aria-label="Имейл">
-            <svg class="icon-envelope" width="16" height="12">
+          <li class="contacts__item" aria-label="Имейл">
+            <svg class="contacts__icon" width="16" height="12">
               <use href="./images/icons.svg#icon-envelope"></use>
             </svg>
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a href="mailto:info@devstudio.com" class="contacts__link">info@devstudio.com</a>
           </li>
-          <li class="item" aria-label="Номер телефона">
-            <svg class="icon-smartphone" width="10" height="16">
+          <li class="contacts__item" aria-label="Номер телефона">
+            <svg class="contacts__icon" width="10" height="16">
               <use href="./images/icons.svg#icon-smartphone"></use>
             </svg>
-            <a href="tel:+380961111111">+38 096 111 11 11</a>
+            <a href="tel:+380961111111" class="contacts__link">+38 096 111 11 11</a>
           </li>
         </ul>
       </div>
@@ -61,24 +59,24 @@
 
     <main>
       <!--Навигационные кнопки-->
-      <section class="button">
+      <section class="buttons">
         <div class="container">
-          <ul class="button-nav">
-            <li><button type="button" class="nav">Все</button></li>
-            <li><button type="button" class="nav">Веб-сайты</button></li>
-            <li><button type="button" class="nav">Приложения</button></li>
-            <li><button type="button" class="nav">Дизайн</button></li>
-            <li><button type="button" class="nav">Маркетинг</button></li>
+          <ul class="buttons__list">
+            <li class="buttons__item"><button type="button" class="buttons__nav">Все</button></li>
+            <li class="buttons__item"><button type="button" class="buttons__nav">Веб-сайты</button></li>
+            <li class="buttons__item"><button type="button" class="buttons__nav">Приложения</button></li>
+            <li class="buttons__item"><button type="button" class="buttons__nav">Дизайн</button></li>
+            <li class="buttons__item"><button type="button" class="buttons__nav">Маркетинг</button></li>
           </ul>
         </div>
       </section>
 
       <!--Перечень работ-->
-      <section class="works">
+      <section class="works-block">
         <div class="container">
           <h2 class="visually-hidden">Наши проекты</h2>
           <ul class="our-works">
-            <li>
+            <li class="our-works__item">
               <a>
                 <div class="thumb">
                   <img
@@ -86,19 +84,19 @@
                     alt="Сайт Технокряк"
                     width="370"
                   />
-                  <p class="description">
+                  <p class="our-works__description">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-                <div class="small-border">
+                <div class="our-works__border">
                   <h3>Технокряк</h3>
-                  <p class="text">Веб-сайт</p>
+                  <p class="our-works__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li>
+            <li class="our-works__item">
               <a>
                 <div class="thumb">
                   <img
@@ -106,19 +104,19 @@
                     alt="Постер матча"
                     width="370"
                   />
-                  <p class="description">
+                  <p class="our-works__description">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-                <div class="small-border">
+                <div class="our-works__border">
                   <h3>Постер New Orlean vs Golden Star</h3>
-                  <p class="text">Дизайн</p>
+                  <p class="our-works__text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li>
+            <li class="our-works__item">
               <a>
                 <div class="thumb">
                   <img
@@ -126,19 +124,19 @@
                     alt="Приложение ресторана"
                     width="370"
                   />
-                  <p class="description">
+                  <p class="our-works__description">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-                <div class="small-border">
+                <div class="our-works__border">
                   <h3>Ресторан Seafood</h3>
-                  <p class="text">Приложение</p>
+                  <p class="our-works__text">Приложение</p>
                 </div>
               </a>
             </li>
-            <li>
+            <li class="our-works__item">
               <a>
                 <div class="thumb">
                   <img
@@ -146,19 +144,19 @@
                     alt="Маркетинг проект"
                     width="370"
                   />
-                  <p class="description">
+                  <p class="our-works__description">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-                <div class="small-border">
+                <div class="our-works__border">
                   <h3>Проект Prime</h3>
-                  <p class="text">Маркетинг</p>
+                  <p class="our-works__text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li>
+            <li class="our-works__item">
               <a>
                 <div class="thumb">
                   <img
@@ -166,19 +164,19 @@
                     alt="Приложение для проекта"
                     width="370"
                   />
-                  <p class="description">
+                  <p class="our-works__description">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-                <div class="small-border">
+                <div class="our-works__border">
                   <h3>Проект Boxes</h3>
-                  <p class="text">Приложение</p>
+                  <p class="our-works__text">Приложение</p>
                 </div>
               </a>
             </li>
-            <li>
+            <li class="our-works__item">
               <a>
                 <div class="thumb">
                   <img
@@ -186,19 +184,19 @@
                     alt="Оформленный сайт"
                     width="370"
                   />
-                  <p class="description">
+                  <p class="our-works__description">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-                <div class="small-border">
+                <div class="our-works__border">
                   <h3 lang="en">Inspiration has no Borders</h3>
-                  <p class="text">Веб-сайт</p>
+                  <p class="our-works__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li>
+            <li class="our-works__item">
               <a>
                 <div class="thumb">
                   <img
@@ -206,19 +204,19 @@
                     alt="Оформленный дизайн книги"
                     width="370"
                   />
-                  <p class="description">
+                  <p class="our-works__description">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-                <div class="small-border">
+                <div class="our-works__border">
                   <h3>Издание Limited Edition</h3>
-                  <p class="text">Дизайн</p>
+                  <p class="our-works__text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li>
+            <li class="our-works__item">
               <a>
                 <div class="thumb">
                   <img
@@ -226,19 +224,19 @@
                     alt="Маркетинг проект"
                     width="370"
                   />
-                  <p class="description">
+                  <p class="our-works__description">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-                <div class="small-border">
+                <div class="our-works__border">
                   <h3>Проект LAB</h3>
-                  <p class="text">Маркетинг</p>
+                  <p class="our-works__text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="last-element">
+            <li class="our-works__item last-element">
               <a>
                 <div class="thumb">
                   <img
@@ -246,15 +244,15 @@
                     alt="Приложение для бизнесса"
                     width="370"
                   />
-                  <p class="description">
+                  <p class="our-works__description">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-                <div class="small-border">
+                <div class="our-works__border">
                   <h3 lang="en">Growing Business</h3>
-                  <p class="text">Приложение</p>
+                  <p class="our-works__text">Приложение</p>
                 </div>
               </a>
             </li>
@@ -262,54 +260,54 @@
         </div>
       </section>
     </main>
-    <!--Футер-->
+     <!--Футер-->
     <footer class="footer">
       <div class="container">
         <div class="guide">
-          <a href="./" class="logo"> <span>Web</span>Studio </a>
-          <address class="footer address">
+          <a href="./" class="logo footer__logo"> <span class="logo__part">Web</span>Studio </a>
+          <address class="guide__address">
             <p>г. Киев, пр-т Леси Украинки, 26</p>
-            <a class="link" href="mailto:info@example.com">info@example.com</a>
-            <a class="link" href="tel:+0380991111111">+38 099 111 11 11</a>
+            <a class="guide__link link" href="mailto:info@example.com">info@example.com</a>
+            <a class="guide__link link" href="tel:+0380991111111">+38 099 111 11 11</a>
           </address>
         </div>
-        <div class="webs">
-          <h3>присоединяйтесь</h3>
-          <ul class="footer-webs-link">
-            <li>
-              <a class="link icon-instagram" href="instagram"></a>
-              <svg class="footer-links" width="20" height="20">
+        <div class="footer__webs">
+          <h3 class="footer__titel">присоединяйтесь</h3>
+          <ul class="webs">
+            <li class="webs__item">
+              <a class="link i" href="instagram"></a>
+              <svg class="fwebs__icon width="20" height="20">
                 <use href="./images/icons.svg#icon-instagramwhite"></use>
               </svg>
             </li>
-            <li>
-              <a class="link icon-twiter" href="twiter"></a>
-              <svg class="footer-links" width="20" height="20">
+            <li class="webs__item">
+              <a class="lin" href="twiter"></a>
+              <svg classwebs__iconks" width="20" height="20">
                 <use href="./images/icons.svg#icon-twitterwhite"></use>
               </svg>
             </li>
-            <li>
-              <a class="link icon-facebook" href="facebook"></a>
-              <svg class="footer-links" width="20" height="20">
+            <li class="webs__item">
+              <a class="link " href="facebook"></a>
+              <svg class="webs__icon" width="20" height="20">
                 <use href="./images/icons.svg#icon-facebookwhite"></use>
               </svg>
             </li>
-            <li>
-              <a class="link icon-linkedin" href="linkedin"></a>
-              <svg class="footer-links" width="20" height="20">
+            <li class="webs__item">
+              <a class="link " href="linkedin"></a>
+              <svg class="webs__icon" width="20" height="20">
                 <use href="./images/icons.svg#icon-linkedinwhite"></use>
               </svg>
             </li>
           </ul>
         </div>
         <div class="follow">
-          <h3>Подпишитесь на рассылку</h3>
-          <form class="form-follow">
-            <div class="form-field-follow">
-              <label for="mail" class="form-label visually-hidden">Почта</label>
-              <input type="email" name="mail" id="mail" placeholder="E-mai" />
+          <h3 class="footer__titel">Подпишитесь на рассылку</h3>
+          <form>
+            <div class="follow__form">
+              <label for="mail" class="follow__label visually-hidden">Почта</label>
+              <input type="email" name="mail" id="mail" placeholder="E-mai" class="follow__input"/>
 
-              <button type="submit" class="button-follow">
+              <button type="submit" class="button follow__button">
                 <span>Подписаться</span>
                 <svg class="icon-button-follow" width="24" height="24">
                   <use href="./images/icons.svg#icon-send"></use>
