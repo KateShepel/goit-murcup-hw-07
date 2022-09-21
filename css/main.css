@@ -20,7 +20,7 @@
   outline: 2px solid tomato;
 }
 
-.hero-title {
+.hero__title {
   color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
@@ -33,8 +33,9 @@
 }
 
 /* Section */
-.section-title {
+.quality__title {
   color: var(--title-text-color);
+  margin-bottom: 10px;
 }
 
 h2 {
@@ -42,6 +43,7 @@ h2 {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 h3 {
@@ -58,59 +60,27 @@ h3 {
   gap: 30px;
 }
 
-.quality h3 {
-  margin-bottom: 10px;
-}
-
-.container h2 {
-  margin-bottom: 50px;
-}
-
 /* Works */
 
-.works-item {
+.works__list {
   display: flex;
   gap: 30px;
   padding-bottom: 94px;
 }
 
-/* Button */
-.button {
-  color: var(--title-text-color);
-  background-color: var(--primary-white-color);
 
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
 
-  display: inline-block;
-  border-radius: 4px;
-  border-color: var(--accent-color);
-  padding: 10px 32px;
-  min-width: 200px;
-  text-align: center;
-}
-
-.button.primary {
-  background-color: var(--accent-color);
-  color: var(--primary-white-color);
-
+.hero__button {
   margin-bottom: 205px;
-  transition: background-color var(--animation);
-}
-
-.button.primary:hover,
-.button.primary:focus {
-  background-color: var(--accent-color-hover);
 }
 
 /* Преимущества */
-.section-text {
+.quality__text {
   font-size: 14px;
   line-height: 1.71;
 }
 
-.list-item .icon {
+.quality__icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -122,7 +92,7 @@ h3 {
   margin-bottom: 30px;
 }
 
-/* .list-item::before {
+/* .quality__list::before {
   display: block;
   content: "";
   height: 120px;
@@ -151,7 +121,7 @@ h3 {
 } */
 
 /* Чем мы занимаэмся */
-.works-item .label {
+.works__label {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -177,24 +147,24 @@ h3 {
   outline: 2px solid tomato;
 }
 
-.team .container {
+.team__container {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.workers {
+.team__list {
   display: flex;
   justify-content: space-between;
   /* gap: 30px; */
 }
 
-.workers .person {
+.team__item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.team .team-title {
+.team__full-name {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -205,52 +175,24 @@ h3 {
   margin-bottom: 10px;
 }
 
-.job-title {
+.team__position {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   margin-bottom: 16px;
 }
 
-.webs-link {
-  display: flex;
-  justify-content: center;
-
-  outline: 1px solid red;
-  height: 44px;
-  align-items: center;
-  gap: 10px;
-}
-
-.webs-link li {
-  width: 44px;
-  height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  outline: 1px solid blue;
-
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.webs-link-icon {
+.webs__icon {
   fill: var(--primary-text-color);
 }
 
-.webs-link li:hover,
-.webs-link li:focus {
-  background-color: var(--accent-color);
-  transition: background-color var(--animation);
-}
-
-.webs-link li:hover .webs-link-icon,
-.webs-link li:focus .webs-link-icon {
+.webs__item:hover .webs__icon,
+.webs__item:focus .webs__icon {
   fill: var(--primary-white-color);
   transition: fill var(--animation);
 }
 
-/* .webs-link .link::before {
+/* .webs .link::before {
   content: "";
   display: block;
 
@@ -262,38 +204,38 @@ h3 {
   background-repeat: no-repeat;
 } */
 
-/* .webs-link .icon-instagram::before {
+/* .webs .icon-instagram::before {
   background-image: url(../imagescss/instagram.svg);
 }
 
-.webs-link .icon-twiter::before {
+.webs .icon-twiter::before {
   background-image: url(../imagescss/twitter.svg);
 }
 
-.webs-link .icon-facebook::before {
+.webs .icon-facebook::before {
   background-image: url(../imagescss/facebook.svg);
 }
 
-.webs-link .icon-linkedin::before {
+.webs .icon-linkedin::before {
   background-image: url(../imagescss/linkedin.svg);
 }
 
-.webs-link .link:hover,
-.webs-link .link:focus {
+.webs .link:hover,
+.webs .link:focus {
   background-color: var(--accent-color);
 } */
 
 /* Clients */
-.titel-clients {
+.clients__titel {
   color: var(--title-text-color);
 }
-.list-clients {
+.clients__list {
   display: flex;
   gap: 30px;
   padding-bottom: 94px;
 }
 
-.client {
+.clients__item {
   padding: 16px 32px 16px 32px;
   width: 170px;
   border: 1px solid var(--border-color);
@@ -301,18 +243,18 @@ h3 {
   cursor: pointer;
 }
 
-.client-logo {
+.clients__logo {
   fill: var(--border-color);
 }
 
-.client:hover,
-.client:focus {
+.clients__item:hover,
+.clients__item:focus {
   border: 1px solid var(--accent-color);
   transition: solid var(--animation);
 }
 
-.client:hover .client-logo,
-.client:focus .client-logo {
+.clients__item:hover .clients__logo,
+.clients__item:focus .clients__logo {
   fill: var(--accent-color);
   transition: fill var(--animation);
 }
@@ -349,15 +291,9 @@ h3 {
   align-items: start;
 }
 
-.form .button {
-  margin-top: 14px;
-  margin-right: 14px;
-  margin-bottom: 14px;
-}
-
 /* Form window */
 
-.form-button {
+.form__button {
   position: absolute;
   right: 0;
   top: 0;
@@ -366,26 +302,26 @@ h3 {
   margin-right: 8px;
 }
 
-.button-close {
-  width: 30px;
+.form__button--close {
+  min-width: 30px;
   height: 30px;
-  padding: 6px;
+  padding: 0;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1px solid var(--primary-text-color);
   background-color: var(--primary-white-color);
-  cursor: pointer;
-  transition: fill var(--animation);
+  transition: fill var(--animation), background-color var(--animation);
 }
 
-.button-close:hover,
-.button-close:focus {
+.form__button--close:hover,
+.form__button--close:focus {
   fill: var(--accent-color);
+  background-color: var(--primary-white-color);
 }
 
-.form-title {
+.form__title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -403,14 +339,14 @@ h3 {
   padding: 40px;
 }
 
-.form-field {
+.form__field {
   outline: 1px solid blue;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
 }
 
-.form-field label {
+.form__label {
   margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
@@ -419,7 +355,7 @@ h3 {
   color: var(--primary-text-color);
 }
 
-.form-field input {
+.form__input {
   margin: 0;
   width: 100%;
   padding: 6px 10px;
@@ -429,36 +365,19 @@ h3 {
   transition: border-color var(--animation);
 }
 
-.form-field input::placeholder {
-  color: tomato;
-}
-
-.button-submit {
+.button__submit {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 200px;
   height: 50px;
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
-  text-align: center;
-  border: none;
-  border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
-  transition: background-color var(--animation);
 }
 
-.button-submit:hover,
-.button-submit:focus {
-  background-color: var(--accent-color-hover);
-}
-
-.thumb-form {
+.form__thumb {
   position: relative;
 }
 
-.icon-form {
+.form__icon {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -466,12 +385,12 @@ h3 {
   transition: fill var(--animation);
 }
 
-.thumb-form input:focus ~ .icon-form {
+.form__input:focus ~ .form__icon {
   fill: var(--accent-color);
 }
 
-.form-field input:focus,
-.form-field textarea:focus {
+.form__input:focus,
+.form__comment:focus {
   border-color: var(--accent-color);
 }
 
@@ -480,7 +399,7 @@ h3 {
   fill: var(--accent-color);
 } */
 
-/* .checkbox {
+/* .agreement__checkbox {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -488,7 +407,7 @@ h3 {
   position: absolute;
   /* width: 100%; */
 
-.checkbox-icon {
+.agreement__icon {
   display: inline-block;
   width: 16px;
   height: 15px;
@@ -499,7 +418,7 @@ h3 {
   margin-right: 7px;
 }
 
-.checkbox:checked + .checkbox-icon {
+.agreement__checkbox:checked + .agreement__icon {
   background-color: var(--accent-color);
   background-image: url(../images/icon_check.svg);
   background-size: contain;
@@ -507,13 +426,13 @@ h3 {
   border-color: var(--accent-color);
 }
 
-.check-label {
+.agreement {
   display: flex;
   align-items: center;
   flex-direction: row;
 }
 
-.check-link {
+.agreement__link {
   margin-left: 2px;
   color: var(--accent-color);
 }
