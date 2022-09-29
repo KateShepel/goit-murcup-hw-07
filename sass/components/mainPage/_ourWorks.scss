@@ -3,6 +3,9 @@
 }
 
 .works {
+  &__title {
+    color: var(--title-text-color);
+  }
   &__list {
     display: flex;
     gap: 30px;

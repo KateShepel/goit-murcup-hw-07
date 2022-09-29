@@ -260,8 +260,16 @@ header {
   padding-bottom: 20px;
 }
 .footer__webs {
-  padding-top: 72px;
-  padding-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-left: 72px;
   outline: 1px solid red;
 }
@@ -269,12 +277,20 @@ header {
   color: var(--primary-white-color);
   text-transform: uppercase;
   margin-bottom: 20px;
+  padding-top: 0;
 }
 
 .guide {
   outline: 1px solid red;
   padding-top: 60px;
   padding-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .guide__address {
   color: var(--primary-white-color);
@@ -357,8 +373,6 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   margin-left: 93px;
-  padding-top: 72px;
-  padding-bottom: 94px;
 }
 .follow__input {
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -505,6 +519,9 @@ h3 {
   position: relative;
 }
 
+.works__title {
+  color: var(--title-text-color);
+}
 .works__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -531,6 +548,9 @@ h3 {
 .team {
   background-color: var(--bg-light-color);
   outline: 2px solid tomato;
+}
+.team__title {
+  color: var(--title-text-color);
 }
 .team__container {
   padding-top: 94px;
